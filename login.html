@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel ="stylesheet" href="CSS/login.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js">
+</script>
+<script src="./JS/login_validation.js"> </script>   
+
+</head>
+	
+<body>
+<!--	header of the page -->
+	<header>
+		<!-- class container is used for styling in css -->
+		<div class="container">
+			<div id="branding">
+				<!-- This way we can isolate "Trung" for
+				styling and still in the same line with 
+					the header -->
+				<h1><span class="highlight"> TENK </span> Computers </h1>
+		</div>
+		
+			<!-- everything in nav tag is linking a 
+				elements to links -->
+		<nav>
+			<ul> 
+				<li><a href="web.html">Home</a></li>
+				<li><a href="information.html">Information</a></li>
+				<li><a href="Form.html">Feedback</a></li>
+				<li class="current"><a href="login.html">Login</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	
+	<section class ="logbg" id="login-section">
+		<div class="regbox">
+			<h2>Login</h2>
+		    
+			<form name="registration" method="post" action="thank.html">
+
+				<div class="textbox">
+					<label for="name">Full Name</label>
+					<i class="fas fa-user" id="usericon"></i>
+					<input type="text" name="name" id="name" placeholder="Alex Smith"/>
+				</div>
+				
+				<div class="login_error">
+					<label class="error" id="nameerror">Full name is required!</label>
+					<label class="error" id="namenumber">Full name can only contain letters!</label>
+				</div>
+
+				<div class="textbox">
+					<label for="email">Email</label>
+					<i class="fas fa-envelope"></i>
+					<input type="email" name="email" id="email" placeholder="alex_smith@email.com"/>
+				</div>
+				
+				<div class="login_error">
+					<label class="error" id="emailerror">Email is required!</label>
+				</div>
+
+
+				<div class="textbox">
+					<label for="password">Password</label>
+					<i class="fas fa-lock"></i>
+					<input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+				</div>
+				
+				<div class="login_error">
+					<label class="error" id="passworderror">Password is required!</label>
+					<label class="error" id="passwordlength">The password must be at least 8 characters long!</label>
+					<label class="error" id="passwordcharacters">Password Must Contain At least 1 letter, 1 number and a special character!</label>
+				</div>
+				
+				<button class="button2" type="submit">Login</button>
+
+			</form>  
+		</div>
+	</section>
+
+
+	<footer id ="login">
+		<p>Tenk Computers, Copyright &copy 2019</p>
+	</footer>
+
+</body>
+</html>
