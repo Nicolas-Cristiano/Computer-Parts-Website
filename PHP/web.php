@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- make content viewable by any devices -->
+	<meta name="viewport" content="width=device=width">
+	
+	<!-- What does these codes do ? scl ?? -->
+	<meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Quang Trung Trinh">
+
+	<title>Web Design | Welcome</title>
+	<!-- linking css -->
+	<link rel ="stylesheet" href="CSS/web.css">
+	
+</head>
+
+<body>
+  <?php session_start(); ?>
+	<!-- refers segmantic tag, header is the
+		header of the page -->
+	<header>
+		<!-- class container is used for styling in css -->
+		<div class="container">
+			<div id="branding">
+				<!-- This way we can isolate "Trung" for
+				styling and still in the same line with 
+					the header -->
+				<h1><span class="highlight"> TENK </span> Computers </h1>
+		</div>
+		
+			<!-- everything in nav tag is linking a 
+				elements to links -->
+		<nav>
+			<ul> 
+				<li class="current"><a href="web.php">Home</a></li>
+				<li><a href="buy.php">Buy</a></li>
+				<li><a href="information.php">Information</a></li>
+				<li><a href="Form.php">Feedback</a></li>
+                                <?php
+                                   $loggedin=$_SESSION["logged"];
+                                   $access = $_SESSION["premissions"];
+                                   if ($loggedin == 1)
+                                    {
+                                     ?>	
+                       		     <li><a href="logout.php">Logout</a></li>
+                                     <!-- <button class="button_1" style="position: relative; bottom: 10px;>Logout</button>-->
+                                     <?php 
+                                     if ($access == 'admin')
+                                      {
+                                       ?>
+                                       <li><a href="addproducts.php">Admin</a></li>
+                                       <?php 
+                                      }
+                                     }else{  
+                                     ?>                                  
+				     <li><a href="login.php">Login</a></li>
+                                     <?php
+                                      }
+                                      ?> 
+				<li><a href="about.php">About Us</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	
+	<section id="showcase" >
+		<div class="container">
+			
+			
+			<h1> Fully Customized PC </h1>
+			<!-- Grabbing dummy tags from lorem ipsumm -->
+			<!-- lorem ipsum provides standardized random text -->
+			<p>All your Desktop and PC Needs.</p>
+		</div>
+	</section>
+	
+	<section id="newsletter">
+		<div class="container">
+			<h1> Subscribe For Great Deals </h1>
+			<form>
+			<input type="email" placeholder="Enter Email...">
+			<button type="submit" class="button_1">Subscribe</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+		
+			<div class="box">
+				<img src="./Images/pcbuild.png" id="pad1">
+				<h3>Build PC</h3>
+				<p>The latest parts to build your dream PC.</p>	
+			</div>
+			
+			<div class="box">
+				<img src="./Images/pcrepair.png"  id="pad2">
+				<h3>PC repair</h3>
+				<p>You've got a problem? we've got a solution!</p>	
+			</div>
+			
+			<div class="box">
+				<img src="./Images/logo_brush.png">
+				<h3>Buy Software</h3>
+				<p>Need an OS? We got you covered!.</p>	
+			</div>
+		</div>
+	</section>
+	
+<div class="containerr">
+  <img name="slide" id="slidee" src="./Images/BG1.jpg" style="width:100%;">
+  <script src="./JS/image_slides.js"></script>
+	<div class="centered">
+		<h1>GAMING PCs MADE <br> SIMPLE </h1>
+		<p>Choose a game, set a budget, and we'll BUILD it</p>
+	</div>
+</div>
+
+	
+	<footer>
+		<p>Tenk Computers Design, Copyright &copy 2019</p>
+	</footer>
+</body>
+
+</html>
