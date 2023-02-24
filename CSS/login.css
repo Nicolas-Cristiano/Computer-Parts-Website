@@ -1,0 +1,440 @@
+body{
+	/* change the font type and font size of the body*/
+	font-family: Arialm, Helvetica, sans-serif; 
+	font-size: 15px; 
+	/* The height between the lines*/
+	line-height:1.5;
+	
+	/* this code do the same thing */
+	/*font: 15px/1.5 Arial, Helvetica, sans-serif; */
+	
+	/* No padding no margin */
+	padding: 0; 
+	margin: 0; 
+	
+	/* set back ground color to light grey */
+	background-color: #f4f4f4; 	
+}
+
+/*Styling for Form */
+
+form.error {
+  color: #ff0000;
+}
+
+ /* Main-col styling */
+ #personalInfo{
+	 float:right; 
+	 width: 25%; 
+ }
+
+/*Styling For Form ends here */
+
+	/* styling for class container */
+.container{
+	/* by doing % instead of px, the web is responsive
+		to any kind of device. 
+		Width is the width of class containter*/
+	width: 80%; 
+	/* move the content to the middle */
+	margin:auto;  
+	/* ??? */
+	overflow:hidden; 
+}
+
+/* styling for ul tag */
+ul{
+	margin: 0; 
+	padding: 0; 
+}
+
+/* Styling tags with id="button_1" */
+/* Styling the buttons */
+.button_1{
+	height: 38px; 
+	background: #e8491d; 
+	/* clear out the border of the button */
+	border: 0; 
+	padding-left: 20px; 
+	padding-right: 20px; 
+	color: #ffffff; 
+}
+
+.dark{
+	padding: 15px; 
+	background: #35424a; 
+	color: #ffffff; 
+	margin-top: 10px; 
+	margin-bottom:10px; 
+}
+
+.containerr {
+  width: 100%; 
+  margin: auto; 
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  font-size: 40px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* styling for header */
+header{
+	/* Set the background to blueish greyish color */
+	background: #35434a; 
+	/* set the color of the texts to white */
+	color: #ffffff; 
+	/* create 30px of space on the top */
+	padding-top: 30px; 
+	/* No matter what device, the minimum height is 70px */
+	min-height: 70px; 
+	/* style for border bottom */
+	border-bottom:#e8491d 3px solid;
+}
+
+/* styling for a tag that have all the link in the header */
+header a{
+	color: #ffffff; 
+	/* Removing the underline of the link */
+	text-decoration: none; 
+	/* Making the text uppercase */
+	text-transform: uppercase; 
+	font-size: 16px; 
+}
+
+header li{
+	/* Bring the elements to the left */
+	float: left; 
+	/* display all the element in one line */
+	display: inline; 
+	/* The order of the field associated with the number is: 
+		top, right, bottom, left */
+	padding: 0 20px 0 20px; 
+}
+
+/* styling for id branding (trung web design) in the header */
+header #branding{
+	float: left; 
+}
+
+header #branding h1{
+	margin: 0; 
+}
+
+/* making (HOME, ABOUT US, SERVICE) move to the right side */
+header nav{
+	float: right; 
+	/* making the elements move down by 10px */
+	margin-top: 10px; 
+}
+
+/* styling class hightlight of the header
+	and tag a class current of the header */
+	/* making "Trung" and "HOME" orange*/
+header .highlight, header .current a{
+	/* making text color orange */
+	color: #e8491d; 
+	font-weight: bold; 
+}
+
+/* making hover for (HOME, ABOUT US, SERVICE) means that
+when you move your mouse to one of these elements, 
+it will change its look a little */
+header a:hover{
+	color: #cccccc; 
+	font-weight: bold; 
+	
+}
+
+/* Styling tags with id showcase */
+/* the affordable website and the content below it */
+#showcase{
+	min-height: 400px; 
+	/* import the image; 
+	the number after no-repeat is associated with following
+	fields: x axis and y axis of the picture
+	-400px move the pic up by 400px */
+	background: url('../Images/showcase.jpg') no-repeat 0 -400px;
+	
+	text-align: center; 
+	color: #ffffff; 
+}
+
+/* Styling tag h1 with id showcase */
+/* Affordable Professional Web Design */
+#showcase h1{
+	margin-top: 100px; 
+	font-size: 50px; 
+	margin-bottom: 10px;
+}
+
+/* Styling tag p with id showcase */
+/* paragraph below Affordable Professional Web Design */
+#showcase p{
+	font-size: 20px; 
+}
+
+/* Styling tags with id newsletter */
+/* " Subscribes to our newsletter " and the subscribes input */
+#newsletter{
+	padding: 15px; 
+	color: #ffffff; 
+	background: #35424a; 
+}
+
+/*	"Subscribes To Ours Newsletter" styling*/
+#newsletter h1{
+	float: left; 
+}
+
+#newsletter form{
+	float: right; 
+	margin-top: 15px; 
+}
+
+/* choose the input with type email in the id="newsletter" of
+ <form> */
+ /* Styling the email input*/
+#newsletter input[type="email"]{
+	padding: 4px; 
+	height: 25px; 
+	width: 250px; 
+}
+
+/* Boxes */
+#boxes{
+	margin-top: 20px; 
+}
+
+/* id = "boxes", class = "box" */
+/* lining up the boxes horizontally*/
+#boxes .box{
+	float: left; 
+	text-align: center; 
+	width: 30%; 
+	padding: 10px; 
+}
+
+/* styling the image */
+#boxes .box img{
+	width: 90px; 
+}
+
+/*Side bar styling */
+/* making the side bar (what we do) go to the left */
+ aside#sidebar{
+	 float: right; 
+	 width: 30%; 
+	 margin-top: 10px; 
+ }
+ 
+ /* tag aside, id = "sidebar", class = "quote" tag <input>
+ and tag aside, id = "sidebar", class = "quote" tag <textarea> 
+ styling */
+ /* styling the */
+ aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding; 5px; 
+ }
+ 
+ /* Main-col styling */
+ article#main-col{
+	 float:left; 
+	 width: 65%; 
+ }
+ 
+ /* Services */
+/* Styling the services listing */ 
+ ul#services li{
+	list-style: none; 
+	padding: 20px; 
+	border: #cccccc solid 1px; 
+	margin-bottom:5px; 
+	background: #e6e6e6; 
+ }
+ 
+footer{
+	padding: 2px; 
+	margin-top: 0px;
+	color: #ffffff; 
+	background-color: #e8491d; 
+	text-align: center; 
+}
+
+/* Media Queries: This is new things */
+/* declaring actions when you change the size of the tab 
+	Because when you change the size of the website, things
+	got messed up, doesn't look in the right order. This media
+	query makes everything looks in order. That is 
+	a part of making a responsive website, means that
+	website will appear nicely no matter the size of tab or
+	what devices website is on */
+@media(max-width: 768px){
+	
+	/* removing the float when the width < 768px */
+	header #branding, 
+	header nav,
+	header nav li, 
+	#newsletter h1, 
+	#newsletter form, 
+	#boxes .box, 
+	article#main-col, 
+	aside#sidebar{
+		float:none; 
+		text-align: center; 
+		width: 100%; 
+	}
+	
+	header{
+		padding-bottom: 20px; 
+	}
+	
+	#showcase h1{
+		margin-top: 40px; 
+	}
+	
+	/* when lower the size of the tab, button get drop down
+	to a new line, we making display full width */
+	#newsletter button, .quote button{
+		display: block; 
+		width: 100%; 
+	}
+	
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width: 100%; 
+		margin-bottom: 5px; 
+	}
+}
+
+
+.logbg {
+
+	margin: 0;
+	padding:0;
+	font-family:sans-serif;
+	background-image: url("../Images/loginbg.jpg");
+	height: 100%; 
+	background-position: 50% 7%; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.regbox {
+
+	width: 500px;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,5%);
+	color:white;  	
+}
+
+.regbox h2{
+	float: left;
+	font-size: 	40px;
+	border-bottom: 6px solid #f40000;
+	margin-bottom: 50px;
+	padding: 13px 0;
+}
+
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin:8px 0;
+	border-bottom: 1px solid #f40000;	
+
+}
+
+.textbox input{
+	border: none;
+	outline: none;
+	background:none;	
+	color: white;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+
+}
+
+.textbox i{
+	padding:4px 5px; 
+	width: 26px;
+	float: left;
+	text-align: center;
+	
+}
+
+.button2{
+	width: 100%;
+	background: none;
+	border: 2px solid #f40000;
+	color: white;
+	padding: 5px;	
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+}
+
+form input{
+	
+	display: block;
+	margin: 8px 0;
+	padding-top: 12px; 
+	padding-bottom: 12px; 
+	
+}
+
+label.error{	
+	display:inline-block;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+	color: #f40000;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
